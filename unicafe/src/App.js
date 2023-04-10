@@ -13,15 +13,15 @@ const App = () => {
   return (
     <>
       <h1>Give Feedback</h1>
-      {good}
       <Button handleClick={() => setGood(good + 1)} name="good" />
       <br />
-      {neutral}
       <Button handleClick={() => setNeutral(neutral + 1)} name="neutral" />
       <br />
-      {bad}
       <Button handleClick={() => setBad(bad + 1)} name="bad" />
       <br />
+      <div>good : {good}</div>
+      <div>neutral : {neutral}</div>
+      <div>bad : {bad}</div>
       <div>positive : {postive}%</div>
       <div>all : {all}</div>
       <div>average : {average}</div>
